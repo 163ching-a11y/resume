@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謝宇茹 - 數位行銷專案管理履歷</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .resume-container {
+                flex-direction: row;
+            }
+        }
+        .sidebar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 30px;
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                width: 35%;
+            }
+        }
+        .main-content {
+            padding: 40px;
+            flex: 1;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ecf0f1;
+            margin: 0 auto 20px;
+            border: 4px solid #34495e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        /* 移除原本的 ::after 偽元素文字提示 */
+        .profile-pic::after {
+            display: none;
+        }
+        .section-title {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .sidebar-title {
+            border-bottom: 1px solid #5d6d7e;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ecf0f1;
+        }
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        .job-title {
+            font-weight: 700;
+            color: #2980b9;
+        }
+        .date {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        .skill-tag {
+            background: #ecf0f1;
+            padding: 4px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 2px;
+            font-size: 0.85rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        @media print {
+            body { background: white; }
+            .resume-container { box-shadow: none; margin: 0; max-width: 100%; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print text-center py-6">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300">
+            匯出為 PDF / 列印
+        </button>
+    </div>
+
+    <div class="resume-container">
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="媒體 (5).jpeg" alt="謝宇茹" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="mb-8 text-center md:text-left">
+                <h1 class="text-3xl font-bold mb-1">謝宇茹</h1>
+                <p class="text-blue-300 font-medium italic">Digital Marketing PM / Content PO</p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="sidebar-title">聯絡資訊</h2>
+                <ul class="text-sm space-y-3">
+                    <li class="flex items-center">
+                        <span class="mr-2">📞</span> 0968613572
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-2">📧</span> 163ching@gmail.com
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">📍</span> 新竹市北區東大路四段<br>288號8F-6
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="sidebar-title">社群影響力</h2>
+                <ul class="text-sm space-y-3">
+                    <li class="flex items-start">
+                        <span class="mr-2">📸</span> <a href="https://www.instagram.com/163______________" target="_blank" class="hover:text-blue-300 underline break-all">IG: 13.5 萬追蹤者</a>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">🎙️</span> <a href="https://www.youtube.com/watch?v=fcE2laT56gQ" target="_blank" class="hover:text-blue-300 underline break-all">TEDx 演講：人性化敘事</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="sidebar-title">專案管理核心技能</h2>
+                <div class="flex flex-wrap gap-1">
+                    <span class="skill-tag">全渠道整合行銷 (IMC)</span>
+                    <span class="skill-tag">預算控管與 ROI 分析</span>
+                    <span class="skill-tag">轉化率優化 (CRO)</span>
+                    <span class="skill-tag">影音剪輯與視覺傳達</span>
+                    <span class="skill-tag">跨部門溝通與管理</span>
+                    <span class="skill-tag">AI 自動化內容生產</span>
+                    <span class="skill-tag">專案時程 (Gantt) 管理</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="mb-10">
+                <h2 class="section-title">職涯總結 | SUMMARY</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    國立高雄師範大學跨領域藝術碩士。具備豐富的自媒體 IP 孵化與<strong>品牌專案管理經驗</strong>，擅長將「藝術敘事」轉化為「商業流量」。從零打造 13.5 萬粉絲品牌，並受邀參與兩次 <strong>TEDx 演講</strong> 分享數位影響力。具備將<strong>數據分析</strong>應用於實戰廣告投放與專案優化的能力，並能流暢地在設計、研發與業務端進行<strong>跨部門溝通</strong>，實現專案目標最大化。
+                </p>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="section-title">專業經歷 | WORK EXPERIENCE</h2>
+                
+                <div class="experience-item">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="job-title text-lg">全職自媒體創作者與作家</h3>
+                        <span class="date">2020 – 至今</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+                        <li><strong>品牌成長管理：</strong> 獨立運營個人 IP，在 24 個月內達成從零到 13.5萬粉絲量成長 的里程碑，負責內容排程、受眾互動與跨品牌聯名合作。</li>
+                        <li><strong>出版專案統籌：</strong> 負責暢銷書作家，負責《擁抱自己的碎片》及《晚安是你，明天的早安也要是你》從內容規劃到上市推廣的完整流程。
+                            <ul class="ml-5 list-circle">
+                                <li>達成 博客來暢銷總榜第一名。</li>
+                                <li>達成 誠品年度暢銷榜第九名。</li>
+                            </ul>
+                        </li>
+                        <li><strong>內容策略專案：</strong> 受邀兩次 TEDx 演講，透過高含金量的知識內容傳遞，成功建立品牌專業權威感。</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="job-title text-lg">費思特 (SPA美體) | 數位行銷專案管理</h3>
+                        <span class="date">2021/01 – 2021/06</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+                        <li><strong>數據驅動決策：</strong> 負責數位轉型引流專案。透過精準廣告投放，達成 點擊率 (CTR) 從 1.5% 提升至 3.8%，並降低 20% 轉換成本 (CPA)。</li>
+                        <li><strong>多媒體內容產製：</strong> 獨立負責文案撰寫、商業簡報製作及 影音剪輯 (PR/CapCut)。將傳統 SPA 服務包裝為具吸引力的數位內容，有效提升品牌線上引流。</li>
+                        <li><strong>跨部門溝通與素材管理：</strong> 擔任行銷端與線下門市之溝通橋樑，整合內部設計資源，建立 標準化內容產製流程與素材庫，提升專案執行效率 30%。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="section-title">學歷背景 | EDUCATION</h2>
+                <div class="experience-item">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="font-bold text-gray-800">國立高雄師範大學</h3>
+                        <span class="date">碩士</span>
+                    </div>
+                    <p class="text-sm text-gray-600">跨領域藝術研究所</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">技術專長 | TECHNICAL TOOLS</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="p-3 bg-blue-50 rounded border-l-4 border-blue-500">
+                        <h4 class="font-bold text-blue-800 mb-1">數位行銷與影音</h4>
+                        <p class="text-gray-600">Google Ads / Meta Ads Manager / PR & CapCut 剪輯 / 素材庫建置與管理。</p>
+                    </div>
+                    <div class="p-3 bg-blue-50 rounded border-l-4 border-blue-500">
+                        <h4 class="font-bold text-blue-800 mb-1">專案協作與 AI 導入</h4>
+                        <p class="text-gray-600">LLM 工作流 (ChatGPT/Claude) / 跨部門溝通技巧 / 專案排程管理工具。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="mb-10 text-center text-gray-400 text-xs no-print">
+        © 2025 Hsieh Yu Ju. Designed for Digital Marketing Project Management.
+    </div>
+
+</body>
+</html>
